@@ -1,0 +1,15 @@
+Session2 Assignment 1
+
+Task 1:
+1.	Check whether /user/acadgild directory exists or not in the HDFS.
+If it doesn't exist, then create this.
+2.	Create a directory /user/acadgild/hadoop.
+Commands:
+Hdfs dfs –test –d /user/acadgild/ && echo “Directory Exists” || hdfs dfs –mkdir /user/acadgild/Hadoop echo “hadoop directory created”
+
+Task 2:
+Create a file in HDFS under directory /user/acadgild/hadoop, with name word-count.txt.
+Whatever we type on screen should get appended to the file.
+Try to type (on screen) few lines from any online article or textbook.
+Commands:
+Cat >> word-count.txt && hdfs dfs –appendToFile word-count.txt /user/acadgild/hadoop/word-count.txt
